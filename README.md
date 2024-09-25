@@ -1,5 +1,5 @@
 ![gradiant line](images/bluegradient.png)
-Purpose
+<div align="center"><h1>Purpose</h1></div> 
 =======
 To orchestrate a DAG on Airflow as well as dockerizing airflow, postgres, and pgadmin. The data is scraped from AWS and is simply a table of current Data Engineering books. The DAG is scheduled to run once a day. This project will be expanded upon with more complexity in DAG tasks, including modeling with dbt, creation of aggregated tables and marts, and SCD 2 type upserting. 
 
@@ -31,4 +31,4 @@ password:`admn`<br>
 
 ![gradiant line](images/air_runs.png)
 
-![gradiant line](images/bluegradient.png)
+
