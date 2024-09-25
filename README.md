@@ -6,7 +6,29 @@ To orchetrate a DAG on Airflow as well as dockerizing airflow, postgres, and pga
 Run
 ===
 Install Docker <br>
-Fork repo <br>
-run `docker compose up` 
+
+run: 
+`docker compose up` <br> 
+
+view airflow: `localhost:8080` <br>
+
+view pgadmin:`localhost:5050`<br>
+
+
+username:`admin` <br>
+
+password:`admn`<br>
+
+Watch for run status:
+
+![gradiant line](images/air_runs.png)
+
+Checkout DAG diagram:
+
+![gradiant line](images/air_dagflow.png)
+
+Query table in pgAdmin:
+
+![gradiant line](images/air_pgadmin2.png)
 
 ![gradiant line](images/bluegradient.png)
