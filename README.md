@@ -19,7 +19,7 @@ username:`admin` <br>
 
 password:`admn`<br>
 
-## Checkout DAG diagram:
+## View DAG diagram:
 
 ![gradiant line](images/air_dagflow.png)
 
