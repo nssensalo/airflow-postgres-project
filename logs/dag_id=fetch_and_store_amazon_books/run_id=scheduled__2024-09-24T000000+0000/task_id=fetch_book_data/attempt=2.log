@@ -1,0 +1,31 @@
+[2024-09-25T01:40:59.271+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-25T01:40:59.284+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-09-24T00:00:00+00:00 [queued]>
+[2024-09-25T01:40:59.292+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-09-24T00:00:00+00:00 [queued]>
+[2024-09-25T01:40:59.293+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 3
+[2024-09-25T01:40:59.304+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): fetch_book_data> on 2024-09-24 00:00:00+00:00
+[2024-09-25T01:40:59.312+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=3402) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-25T01:40:59.313+0000] {standard_task_runner.py:72} INFO - Started process 3404 to run task
+[2024-09-25T01:40:59.314+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_and_store_amazon_books', 'fetch_book_data', 'scheduled__2024-09-24T00:00:00+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpu40z92sa']
+[2024-09-25T01:40:59.315+0000] {standard_task_runner.py:105} INFO - Job 100: Subtask fetch_book_data
+[2024-09-25T01:40:59.363+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-09-24T00:00:00+00:00 [running]> on host 12236234e313
+[2024-09-25T01:40:59.433+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_and_store_amazon_books' AIRFLOW_CTX_TASK_ID='fetch_book_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-24T00:00:00+00:00'
+[2024-09-25T01:40:59.435+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-25T01:40:59.436+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-25T01:40:59.437+0000] {logging_mixin.py:190} INFO - Current task name:fetch_book_data state:running start_date:2024-09-25 01:40:59.285568+00:00
+[2024-09-25T01:40:59.438+0000] {logging_mixin.py:190} INFO - Dag name:fetch_and_store_amazon_books and current dag run status:running
+[2024-09-25T01:40:59.438+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-25T01:41:01.121+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-25T01:41:01.129+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-25T01:41:01.130+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fetch_and_store_amazon_books, task_id=fetch_book_data, run_id=scheduled__2024-09-24T00:00:00+00:00, execution_date=20240924T000000, start_date=20240925T014059, end_date=20240925T014101
+[2024-09-25T01:41:01.138+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-25T01:41:01.139+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-25T01:41:01.140+0000] {logging_mixin.py:190} INFO - Dag name:fetch_and_store_amazon_books queued_at:2024-09-25 01:37:50.630667+00:00
+[2024-09-25T01:41:01.141+0000] {logging_mixin.py:190} INFO - Task hostname:12236234e313 operator:PythonOperator
+[2024-09-25T01:41:01.181+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-25T01:41:01.193+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-09-25T01:41:01.205+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-25T01:41:01.209+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
